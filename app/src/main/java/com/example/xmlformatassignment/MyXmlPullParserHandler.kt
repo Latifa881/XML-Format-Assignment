@@ -33,6 +33,8 @@ class MyXmlPullParserHandler {
                         tagName.equals("marks", ignoreCase = true) -> {
                             marks = text!!.toInt()
                         }
+                        tagName.equals("StudentDetails", ignoreCase = true) -> {
+                        }
 
                         else -> students_Details.add(studentsDetails( name,marks))
                     }
